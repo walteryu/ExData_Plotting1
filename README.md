@@ -99,25 +99,46 @@ GitHub so that the GitHub version of your repository is up to
 date. There should be four PNG files and four R code files.
 
 
+<<<<<<< HEAD
 The four plots that you will need to construct are shown below.
+=======
+The four plots that you will need to construct are shown below.
+>>>>>>> 73fe5c675a2db951b302bfd68524bf7a56094d46
 
 
 ### Plot 1
 
 
+<<<<<<< HEAD
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png)
+=======
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png)
+>>>>>>> 73fe5c675a2db951b302bfd68524bf7a56094d46
 
 
 ### Plot 2
 
+<<<<<<< HEAD
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png)
+=======
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png)
+>>>>>>> 73fe5c675a2db951b302bfd68524bf7a56094d46
 
 
 ### Plot 3
 
+<<<<<<< HEAD
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png)
+=======
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png)
+>>>>>>> 73fe5c675a2db951b302bfd68524bf7a56094d46
 
 
 ### Plot 4
 
+<<<<<<< HEAD
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png)
+=======
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png)
+
+>>>>>>> 73fe5c675a2db951b302bfd68524bf7a56094d46
