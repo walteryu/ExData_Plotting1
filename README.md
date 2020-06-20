@@ -6,6 +6,10 @@
 
 This repository contains Project 1 for the JHU EDA course. Following assignment instructions, it imports the UCI data and plots results as instructed. All steps are outlined below and noted in comments within the code.
 
+### Note - Git Commits
+
+This repository was forked from the [official one](https://github.com/rdpeng/ExData_Plotting1); however, the git history file was re-created due to issues with the large data file. It was originally committed but had to be unstaged/removed due to Github file size restrictions; however, the file persisted in the repository so .git was re-created to resolve this problem.
+
 ## Original README - Listed Below
 
 ### Introduction
