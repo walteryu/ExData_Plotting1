@@ -6,9 +6,9 @@
 
 This repository contains Project 1 for the JHU EDA course. Following assignment instructions, it imports the UCI data and plots results as instructed. All steps are outlined below and noted in comments within the code.
 
-### Original README - Listed Below
+## Original README - Listed Below
 
-## Introduction
+### Introduction
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
