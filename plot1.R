@@ -23,6 +23,7 @@ print(names(data_feb))
 print(head(data_feb))
 
 # source: code from swirl eda modules 1-5
+# hist usage: https://www.statmethods.net/graphs/density.html
 dev.cur()
 hist(data_feb$Global_active_power, col="red", main = "Global Active Power", xlab="Global Active Power (kilowatts)")
 dev.copy(png, file="plot1.png")
