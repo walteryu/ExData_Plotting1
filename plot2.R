@@ -23,12 +23,14 @@ data_feb <- subset(data, Date=="1/2/2007" | Date=="2/2/2007")
 data_feb$plot_date <- strptime(paste(data_feb$Date, data_feb$Time), format="%d/%m/%Y %H:%M:%S")
 
 # verify data import
-print(names(data_feb))
-print(head(data_feb))
+# print(names(data_feb))
+# print(head(data_feb))
 
 # source: code from swirl eda modules 1-5
-# line plot: http://www.sthda.com/english/wiki/generic-plot-types-in-r-software
 dev.cur()
+
+# line plot: http://www.sthda.com/english/wiki/generic-plot-types-in-r-software
 plot(data_feb$plot_date, data_feb$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+
 dev.copy(png, file="plot2.png")
 dev.off()
