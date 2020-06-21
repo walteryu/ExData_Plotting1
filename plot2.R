@@ -12,7 +12,7 @@
 # sources:
 # https://bookdown.org/rdpeng/rprogdatascience/getting-data-in-and-out-of-r.html
 # https://www.coursera.org/learn/exploratory-data-analysis/discussions/weeks/1/threads/2M337rTnEeWHMgod_NjFNw
-data <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
+# data <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
 
 # https://www.coursera.org/learn/exploratory-data-analysis/discussions/weeks/1/threads/2tnkfMoIEeWwyg7SJZ3bgQ
 
@@ -20,12 +20,22 @@ data <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.s
 # source: https://stackoverflow.com/questions/4935479/how-to-combine-multiple-conditions-to-subset-a-data-frame-using-or
 data_feb <- subset(data, Date=="1/2/2007" | Date=="2/2/2007")
 
+# date conversion
+# source: http://rfunction.com/archives/1912
+# data_feb$Day <- weekdays(as.Date(data_feb$Date, format="%d/%m/%Y"))
+
+# combine date/time for continuous line plot
+# source: https://www.coursera.org/learn/exploratory-data-analysis/discussions/weeks/1/threads/2tnkfMoIEeWwyg7SJZ3bgQ
+data_feb$plot_date <- strptime(paste(data_feb$Date, data_feb$Time), format="%d/%m/%Y %H:%M:%S")
+
 # verify data import
 print(names(data_feb))
 print(head(data_feb))
 
 # source: code from swirl eda modules 1-5
+# line plot: http://www.sthda.com/english/wiki/generic-plot-types-in-r-software
 dev.cur()
-hist(data_feb$Global_active_power, col="red", main = "Global Active Power", xlab="Global Active Power (kilowatts)")
-dev.copy(png, file="plot1.png")
+plot(data_feb$plot_date, data_feb$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+dev.copy(png, file="plot2.png")
 dev.off()
+
