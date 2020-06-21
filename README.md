@@ -8,6 +8,8 @@ This repository contains Project 1 for the JHU EDA course. Following assignment 
 
 * Plot 1 - Data subset by date, then plot as histogram
 * Plot 2 - Date and time concatenated, then plot as line plot
+* Plot 3 - Multiple line plot created using lines/legend functions
+* Plot 4 - Multiple plots created using par functions
 
 ### Note - Git Commits
 
