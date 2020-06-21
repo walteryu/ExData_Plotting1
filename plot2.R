@@ -32,4 +32,3 @@ dev.cur()
 plot(data_feb$plot_date, data_feb$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 dev.copy(png, file="plot2.png")
 dev.off()
-
