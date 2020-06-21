@@ -14,15 +14,9 @@
 # https://www.coursera.org/learn/exploratory-data-analysis/discussions/weeks/1/threads/2M337rTnEeWHMgod_NjFNw
 # data <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
 
-# https://www.coursera.org/learn/exploratory-data-analysis/discussions/weeks/1/threads/2tnkfMoIEeWwyg7SJZ3bgQ
-
 # subset data by date
 # source: https://stackoverflow.com/questions/4935479/how-to-combine-multiple-conditions-to-subset-a-data-frame-using-or
 data_feb <- subset(data, Date=="1/2/2007" | Date=="2/2/2007")
-
-# date conversion
-# source: http://rfunction.com/archives/1912
-# data_feb$Day <- weekdays(as.Date(data_feb$Date, format="%d/%m/%Y"))
 
 # combine date/time for continuous line plot
 # source: https://www.coursera.org/learn/exploratory-data-analysis/discussions/weeks/1/threads/2tnkfMoIEeWwyg7SJZ3bgQ
