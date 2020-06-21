@@ -9,11 +9,6 @@
 # 2. full dataset was imported, then filtered by date
 # 3. plot made with single function call
 
-# source: https://bookdown.org/rdpeng/rprogdatascience/getting-data-in-and-out-of-r.html
-# rows_10 <- read.table("household_power_consumption.txt", nrows=10)
-# classes  <- sapply(rows_10, class)
-# print(classes)
-
 # sources:
 # https://bookdown.org/rdpeng/rprogdatascience/getting-data-in-and-out-of-r.html
 # https://www.coursera.org/learn/exploratory-data-analysis/discussions/weeks/1/threads/2M337rTnEeWHMgod_NjFNw
