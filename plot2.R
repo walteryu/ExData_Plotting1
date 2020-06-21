@@ -29,6 +29,9 @@ data_feb$plot_date <- strptime(paste(data_feb$Date, data_feb$Time), format="%d/%
 # source: code from swirl eda modules 1-5
 dev.cur()
 
+# reset par: https://stackoverflow.com/questions/7535982/how-to-reset-parmfrow-in-r
+par(mfrow=c(1,1))
+
 # line plot: http://www.sthda.com/english/wiki/generic-plot-types-in-r-software
 plot(data_feb$plot_date, data_feb$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 
