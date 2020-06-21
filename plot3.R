@@ -30,13 +30,17 @@ data_feb$plot_date <- strptime(paste(data_feb$Date, data_feb$Time), format="%d/%
 # line plot: http://www.sthda.com/english/wiki/generic-plot-types-in-r-software
 dev.cur()
 
+# reset par: https://stackoverflow.com/questions/7535982/how-to-reset-parmfrow-in-r
+par(mfrow=c(1,1))
+
 # multiple lines: http://www.countbio.com/web_pages/left_object/R_for_biology/R_fundamentals/multiple_curves_R.html
 plot(data_feb$plot_date, data_feb$Sub_metering_1, type="l", ylab="Energy sub metering", xlab="")
 lines(data_feb$plot_date, data_feb$Sub_metering_2, type="l", ylab="Energy sub metering", xlab="", col="red")
 lines(data_feb$plot_date, data_feb$Sub_metering_3, type="l", ylab="Energy sub metering", xlab="", col="blue")
 
 # source: code from swirl eda modules 1-5
-legend("topright", col=c("black", "blue", "red"), lty=c(1,1,1), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+# resize legend: https://www.coursera.org/learn/exploratory-data-analysis/discussions/weeks/1/threads/9ejiaiTwEea_6Q5JzpBVwQ
+legend("topright", col=c("black", "blue", "red"), lty=c(1,1,1), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex=0.5)
 
 dev.copy(png, file="plot3.png")
 dev.off()
