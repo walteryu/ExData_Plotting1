@@ -25,6 +25,9 @@ data_feb <- subset(data, Date=="1/2/2007" | Date=="2/2/2007")
 # source: code from swirl eda modules 1-5
 dev.cur()
 
+# reset par: https://stackoverflow.com/questions/7535982/how-to-reset-parmfrow-in-r
+par(mfrow=c(1,1))
+
 # hist usage: https://www.statmethods.net/graphs/density.html
 hist(data_feb$Global_active_power, col="red", main = "Global Active Power", xlab="Global Active Power (kilowatts)")
 
